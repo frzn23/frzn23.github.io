@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Workshops - Updated Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Workshop-specific styles */
+            .workshop-card {
+                border: 1px solid rgba(0,0,0,0.1);
+                border-radius: 1rem;
+                transition: transform 0.3s ease;
+                height: 100%;
+            }
+
+            .workshop-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            }
+
+            .workshop-badge {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 2rem;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+
+            .badge-upcoming {
+                background-color: var(--primary);
+                color: white;
+            }
+
+            .badge-past {
+                background-color: #6c757d;
+                color: white;
+            }
+
+            .workshop-date {
+                color: var(--primary);
+                font-weight: 600;
+            }
+
+            .workshop-image {
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Updated Theme</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Workshops</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Contact</a></li>
+                    </ul>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Get involved</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Workshop Header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-1 lh-1 mb-3">Our Workshops</h1>
+                        <p class="lead fw-normal text-muted mb-5">Join our interactive workshops and enhance your skills with industry experts.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Upcoming Workshops Section -->
+        <section class="py-5">
+            <div class="container px-5">
+                <h2 class="text-center font-alt mb-4">Upcoming Workshops</h2>
+                <div class="row gx-5">
+                    <!-- Workshop 1 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 1">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">June 15, 2024</p>
+                                <h3 class="font-alt mb-3">Leadership Workshop</h3>
+                                <p class="text-muted mb-4">Learn essential leadership skills from experienced mentors.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Workshop 2 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 2">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">July 1, 2024</p>
+                                <h3 class="font-alt mb-3">Digital Marketing</h3>
+                                <p class="text-muted mb-4">Master the latest digital marketing strategies and tools.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Workshop 3 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 3">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">July 15, 2024</p>
+                                <h3 class="font-alt mb-3">Data Analytics</h3>
+                                <p class="text-muted mb-4">Learn data analysis techniques and visualization tools.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Workshop 4 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 4">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">August 1, 2024</p>
+                                <h3 class="font-alt mb-3">UX Design</h3>
+                                <p class="text-muted mb-4">Explore user experience design principles and practices.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Workshop 5 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 5">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">August 15, 2024</p>
+                                <h3 class="font-alt mb-3">Project Management</h3>
+                                <p class="text-muted mb-4">Master agile project management methodologies.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Workshop 6 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-upcoming">Upcoming</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Workshop 6">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">September 1, 2024</p>
+                                <h3 class="font-alt mb-3">Content Strategy</h3>
+                                <p class="text-muted mb-4">Develop effective content strategies for digital platforms.</p>
+                                <button class="btn btn-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#workshopModal">
+                                    Register Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Workshops Section -->
+        <section class="py-5 bg-light">
+            <div class="container px-5">
+                <h2 class="text-center font-alt mb-4">Past Workshops</h2>
+                <div class="row gx-5">
+                    <!-- Past Workshop 1 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 1">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">March 10, 2024</p>
+                                <h3 class="font-alt mb-3">Public Speaking</h3>
+                                <p class="text-muted mb-4">Master the art of public speaking and presentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Past Workshop 2 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 2">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">February 15, 2024</p>
+                                <h3 class="font-alt mb-3">Social Media Marketing</h3>
+                                <p class="text-muted mb-4">Effective strategies for social media engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Past Workshop 3 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 3">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">January 20, 2024</p>
+                                <h3 class="font-alt mb-3">Web Development</h3>
+                                <p class="text-muted mb-4">Introduction to modern web development practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Past Workshop 4 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 4">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">December 10, 2023</p>
+                                <h3 class="font-alt mb-3">Business Analytics</h3>
+                                <p class="text-muted mb-4">Understanding business metrics and analytics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Past Workshop 5 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 5">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">November 15, 2023</p>
+                                <h3 class="font-alt mb-3">Creative Writing</h3>
+                                <p class="text-muted mb-4">Develop your creative writing skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Past Workshop 6 -->
+                    <div class="col-lg-4 col-md-6 mb-5">
+                        <div class="workshop-card position-relative">
+                            <span class="workshop-badge badge-past">Past</span>
+                            <img src="https://dummyimage.com/600x400/000/fff" class="workshop-image w-100" alt="Past Workshop 6">
+                            <div class="p-4">
+                                <p class="workshop-date mb-2">October 20, 2023</p>
+                                <h3 class="font-alt mb-3">Personal Branding</h3>
+                                <p class="text-muted mb-4">Build and maintain your personal brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop Registration Modal -->
+        <div class="modal fade" id="workshopModal" tabindex="-1" aria-labelledby="workshopModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="workshopModalLabel">Workshop Registration</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <form id="workshopForm">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+                                <label for="name">Full name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" placeholder="Any specific requirements..." style="height: 10rem"></textarea>
+                                <label for="message">Message (Optional)</label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary rounded-pill btn-lg" type="submit">Submit Registration</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Modal-->
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

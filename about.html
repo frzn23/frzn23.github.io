@@ -17,10 +17,41 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
+            /* Global background colors */
+            /* body {
+                background: linear-gradient(135deg, #f0f2f5 0%, #e9ecef 100%);
+            } */
+
+            /* Navigation bar styling */
+            #mainNav {
+                background-color: #ffffff !important;
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Header section styling */
+            .py-5.mt-5 {
+                /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+                color: white;
+                padding-top: 7rem !important;
+            }
+
+            .py-5.mt-5 .text-muted {
+                color: rgba(255, 255, 255, 0.8) !important;
+            }
+
+            /* Content sections styling */
             .animated-section {
                 position: relative;
                 padding: 4rem 0;
                 overflow: hidden;
+                background-color: #ffffff;
+                margin: 2rem 0;
+                border-radius: 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .animated-section:nth-child(odd) {
+                background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             }
 
             .animated-section img {
@@ -30,6 +61,12 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
 
+            /* Footer styling */
+            .bg-black {
+                background: linear-gradient(45deg, #000000 0%, #212529 100%) !important;
+            }
+
+            /* Animation */
             .fade-in {
                 opacity: 0;
                 transform: translateY(20px);
@@ -41,6 +78,29 @@
                     opacity: 1;
                     transform: translateY(0);
                 }
+            }
+
+            /* Text color adjustments */
+            .font-alt {
+                color: var(--primary);
+            }
+            
+            p.text-muted {
+                color: #000000 !important;
+            }
+
+            /* Override text-muted in the header section only */
+            .py-5.mt-5 .text-muted {
+                color: rgba(0, 0, 0, 0.8) !important;
+            }
+
+            /* Additional specific override for paragraphs */
+            .animated-section p {
+                color: #000000 !important;
+            }
+
+            .container p {
+                color: #000000 !important;
             }
         </style>
     </head>
@@ -68,7 +128,6 @@
             <div class="container px-5">
                 <div class="text-center mb-4">
                     <h2 class="display-4 lh-1 mb-4"><br>About Us</h2>
-                    <p class="lead text-muted">Learn more about our journey, our goals, and what we stand for.</p>
                 </div>
 
                 <!-- Our Story -->
